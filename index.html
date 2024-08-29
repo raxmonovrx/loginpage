@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ========== CSS ========== -->
+        <link rel="stylesheet" href="" />
+        <!-- ========== TITLE ========== -->
+        <title>Login Page</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: transparent;
+            }
+            body {
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+                background-color: #ddd;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+
+            form label {
+                font-size: 12px;
+                font-family: sans-serif;
+                color: #474444;
+                font-weight: 550;
+                margin-bottom: 3px;
+            }
+            form input {
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                padding: 5px 10px;
+                font-size: 16px;
+                margin-bottom: 20px;
+                color: #474444;
+                font-family: sans-serif;
+            }
+            form input[type="submit"] {
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                transition: 0.2s;
+                cursor: pointer;
+                &:active {
+                    transform: scale(0.98);
+                }
+            }
+            .show {
+                position: absolute;
+                bottom: 68px;
+                right: -35px;
+                padding: 5px;
+                font-size: 16px;
+
+                border: none;
+                border-radius: 5px;
+
+                cursor: pointer;
+
+                &:active {
+                    transform: scale(0.98);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <form class="form">
+            <label for="username">Username</label>
+            <input
+                type="text"
+                name="username"
+                id="username"
+                required
+                autocomplete="off"
+                class="username"
+                minlength="3"
+            />
+            <label for="password">Password</label>
+            <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                autocomplete="off"
+                class="password"
+                minlength="8"
+            />
+            <button class="show" type="button">🤔</button>
+            <input type="submit" />
+        </form>
+    </body>
+    <!-- ========== SCRIPT ========== -->
+    <script src="script.js"></script>
+</html>
