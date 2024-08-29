@@ -6,9 +6,9 @@ const show = document.querySelector(".show");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     const user = {
-        name: "Farruxbek",
+        name: "FarruXbek",
         lname: "Raxmonov",
-        username: "raxmonovrx",
+        username: "@raxmonovrx",
         password: "12345678",
     };
     const usernameValue = username.value;
